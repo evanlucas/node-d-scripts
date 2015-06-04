@@ -4,6 +4,7 @@
 
 dtrace:::BEGIN
 {
+  printf("NODE HTTP-SERVER-REQUESTS\n\n");
   printf("__________________________________________\n");
   printf("| %6s | %-6s | %-20s |\n", "PID", "METHOD", "PATH");
   printf("|--------|--------|----------------------|\n");
